@@ -33,3 +33,17 @@ fs.readFile("sakib.txt","utf-8", (err,data)=>{
     }
     else console.log(data);
 })
+
+fs.rename("sadman.txt","sadmanshakib.txt",(err)=>{
+    if(err){
+        console.error(err);
+    }
+    else console.log("Successfully renamed file");
+})
+
+fs.exists("sakib.txt",(err,data)=>{
+    if(err){
+        console.error(err);
+    }
+    else console.log(data);
+})
